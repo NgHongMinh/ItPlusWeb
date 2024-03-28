@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+//biến
+    let myNumber = 42;
+    console.log(myNumber);
+    let myString = "Hello, World!";
+    console.log(myString.length);
+    let isMale = false;
+    if (isMale) {
+        console.log("Người này là nam giới");
+    } else {
+        console.log("Người này không phải là nam giới");
+    }
+// cấu trúc điều kiện
+    //1
+    let number1 = 10;
+    if (number1 % 2 === 0) {
+        console.log("Even number");
+    } else {
+        console.log("Odd number");
+    }
+    //2
+    let number2 = -10;
+    if (Number.isInteger(number2) && number2 > 0) {
+        console.log("Positive integer");
+    } else {
+        console.log("Not a positive integer");
+    }
+    //3
+    let year = 2020;
+    if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+        console.log("Leap year");
+    } else {
+        console.log("Not a leap year");
+    }
+
+// cấu trúc lặp
+    //1
+    let n1 = parseInt(prompt("Enter a positive integer:"));
+    let sum = 0;
+    for (let i = 1; i <= n1; i++) {
+        sum += i;
+    }
+    console.log(`The sum of numbers from 1 to ${n1} is ${sum}`);
+    console.log('-----------------------------------------')
+    //2
+    let n2 = parseInt(prompt("Enter a positive integer:"));
+    let n3 = n2
+    let factorial = 1;
+    while (n2 > 0) {
+        factorial *= n2;
+        n2--;
+    }
+    console.log(`The factorial of ${n3} is ${factorial}`);
+    console.log('-----------------------------------------')
+    //3
+    for (let a = 2; a <= 9; a++) {
+        for (let b = 2; b <= 9; b++) {
+            console.log(`${a} * ${b} = ${a * b}`);
+        }
+        console.log();
+    }
+</script>
+</html>
